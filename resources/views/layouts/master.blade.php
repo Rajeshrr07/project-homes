@@ -249,6 +249,20 @@
             --tw-text-opacity: 1;
             color: rgb(255 255 255/var(--tw-text-opacity));
         }
+
+        @media (min-width: 768px) and (max-width:1200px) {
+            .footer {
+
+                padding: 0px 40px !important;
+            }
+
+            .col-md-2 {
+
+                flex: 0 0 25.666667% !important;
+                max-width: 25.666667% !important;
+                margin-bottom: 20px !important;
+            }
+        }
     </style>
 </head>
 

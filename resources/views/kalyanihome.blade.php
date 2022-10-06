@@ -279,7 +279,7 @@
         color: rgb(35, 39, 40);
     }
 
-    .city svg {
+    .tech-park svg {
         margin-top: -12px;
     }
 
@@ -369,6 +369,7 @@
     .we-make {
         background: #161c25;
         height: 700px;
+        padding: 20px;
     }
 
     .we-make-mobile-image::before {
@@ -474,6 +475,20 @@
     }
 
     /* multi-carousal */
+    .multi-carousal {
+        margin: auto 80px;
+    }
+
+    .sharing-moment {
+        background: #fff;
+        padding: 32px 20px 32px;
+    }
+
+    .sponsors {
+        background: #fafbfb;
+        padding: 32px 20px 100px;
+    }
+
     #slider-section {
         height: 500px;
         display: flex;
@@ -683,11 +698,6 @@
         border-color: transparent !important;
     }
 
-    .scroll-image {
-        width: 304px;
-        margin-left: 180px;
-        position: absolute;
-    }
 
     .scroll-second-image {
         opacity: 0;
@@ -717,264 +727,539 @@
         display: none;
     }
 
-    @media (max-width: 1000px) {
-        img.d-block.img-fluid.banner-image {
-            width: 100% !important;
-            height: 400px;
+    img.ap-img,
+    .commercial-img,
+    .interior-images {
+        width: 100%;
+        border-radius: 0.5em;
+    }
+
+    img.ap-img-2.ap-img {
+        margin-left: -80px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .commercial-img-1 {
+        margin-left: 80px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+    }
+
+    img.area-images.rent-img-2,
+    .interior-img-2 {
+        margin-top: 10px;
+    }
+
+    img.area-images {
+        width: 100%;
+        border-radius: 0.5em;
+    }
+
+    @media (min-width: 768px) and (max-width:1000px) {
+
+        img.d-block.img-fluid.scroll-image.scroll-second-image {
+            top: 150;
         }
 
-        .banner-row {
+        .banner-image {
+            width: 100%;
+            height: 435px !important;
+        }
+
+        .banner-row .col-md-4 {
+            flex: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 170px !important;
+        }
+
+        .container-fluid {
+            width: 100% !important;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .navbar {
+            padding: 0px !important;
+            margin: 0px auto;
+        }
+
+
+        .navbar-nav {
+            flex-direction: row;
+            position: absolute;
+            z-index: 10;
+            margin-top: 84px;
+        }
+
+        ul.nav.navbar-nav.navbar-right {
+            display: none;
+        }
+
+        .banner-row,
+        .col-md-8 {
+            padding: 0 !important;
+            display: block !important;
+            flex: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .row {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .banner-row .col-md-4 {
+            padding: 0 !important;
+            margin-top: -23px;
+        }
+
+        h1.font-bold.banner-heading {
+            line-height: 1.3em;
+            font-size: 36px;
+            width: 412px;
+            font-weight: bold;
+            color: #fff !important;
+            padding: 50px 37px;
+        }
+
+        h1.font-bold.banner-heading p.sort-description {
+            padding-top: 15px;
+            color: #fff !important;
+        }
+
+        form.search {
+            display: none;
+        }
+
+        .mobile-form-input {
+            border: none;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        .card.card-col-4 {
+            margin-top: 70px;
+        }
+
+        .card {
+            margin: 0px 80px 10px 80px;
+        }
+
+        .icons-row.container-fluid.d-flex {
+            padding: 30px 20px;
+        }
+
+        .icons-row .col-xl-4 {
+            padding-right: 5px !important;
+            padding-left: 0px !importnat;
+        }
+
+        form.mobile-form {
+            display: block;
+            z-index: 10;
+            margin: -25px 20px 0px 20px;
+            left: 0px;
+            right: 0px;
+            color: rgb(153, 153, 153);
+            position: absolute;
+            background: rgb(255, 255, 255);
+            z-index: 3;
+            border: 1px solid rgb(232, 232, 232);
+            box-shadow: rgb(0 0 0 / 10%) 0px 0.95em 3.8em;
+            border-radius: 0.9em;
+            padding: 13px;
+        }
+
+        .fa-search {
+            font-size: 24px;
+        }
+
+        h2.homes-title.font-bold,
+        h2.homes-title.font-bold span,
+        .sharing-moment-title,
+        .spot-light-title {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .bg .product-spec,
+        .bg.commercial.commercial-infra,
+        .bg.apartments,
+        .container.rental-area-spec,
+        .bg.interior {
+            background: #fff;
+            border: 1px solid #eee;
+            box-shadow: 0 25px 50px rgb(21 31 48 / 5%);
+            border-radius: 20px;
+            padding: 0px !important;
+            position: relative;
+            z-index: 1;
+            margin: 46px;
+        }
+
+        .container.product-spec,
+        .commercial-spec,
+        .apartments-list,
+        .container.rental-area-spec,
+        .hotel-foods {
+            padding: 10px !important;
+        }
+
+        .commercial-infra::before {
+            background: none;
+        }
+
+        .commercial-infra p {
+            color: #161c25 !important;
+        }
+
+        .commercial-img-1 {
+            margin-left: 80px;
+            position: absolute;
+            top: 0 !important;
+            transform: translateY(42%);
+            z-index: 99;
+        }
+
+        .apartments-images,
+        .commercial-images,
+        .product-images,
+        .area-image {
+            top: 100px;
+        }
+
+        .interior-images {
+            top: 30px;
+        }
+
+        .commercial-img-1,
+            {
+            margin-left: 80px;
+            position: absolute;
+            top: 0;
+            transform: translateY(40%);
+            z-index: 99;
+        }
+
+        img.ap-img-2.ap-img {
+            margin-left: -80px;
+            position: absolute;
+            top: 0;
+            transform: translateY(40%);
+            z-index: 99;
+        }
+
+        .rental::before {
+            background: none;
+        }
+
+        .rental p {
+            color: #161c25 !important;
+        }
+    }
+
+    @media (min-width: 90em) {
+        #tns1 {
+            width: calc(394.333%) !important;
+        }
+    }
+
+    @media(max-width:767px) {
+        .card-image {
+            width: 100%;
+            height: 170px !important;
+        }
+
+        h3 {
+            color: #f4a950;
+        }
+
+        img.d-block.img-fluid.banner-image {
+            width: 100%;
+        }
+
+        .sponsors {
+            background: #fafbfb;
+            padding: 32px 20px 100px;
+        }
+
+        #tns1>.tns-item {
+            width: calc(6.25%) !important;
+            height: auto !important;
+            padding-right: 0px !important;
+        }
+
+        .sharing-moment {
+            background: #fff;
+            padding: 32px 20px 32px;
+            text-align: center;
+        }
+
+        .we-make {
+            background: #161c25;
+            height: 1200px;
+        }
+
+        .col-md-7,
+        .col-md-6 {
+            padding-right: 15px !important;
+            padding-left: 0 !important;
+        }
+
+        .desc {
+            font-size: 20px;
+            color: #4E5253;
+            text-align: -webkit-center;
+            margin-top: 50px;
+        }
+
+        .scrollspy {
+            text-align: center;
+        }
+
+        .we-make-title {
+            font-size: 39px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            line-height: 46px;
+            padding: 50px 5px 20px 5px;
+        }
+
+        .all-have-row.d-flex {
             display: block !important;
         }
 
-        @media (min-width: 90em) {
-            #tns1 {
-                width: calc(394.333%) !important;
-            }
+        .bg.homes.roofs,
+        .bg.commercial.commercial-infra,
+        .bg.apartments,
+        .container.rental-area-spec,
+        .bg.interior {
+            display: none;
         }
 
-        @media(max-width:767px) {
-            .card-image {
-                width: 100%;
-                height: 170px !important;
-            }
+        .card-home,
+        .card-commercial,
+        .card-apartments,
+        .card-rental,
+        .card-interior {
+            display: block;
+        }
 
-            img.d-block.img-fluid.banner-image {
-                width: 100%;
-            }
+        .card-home,
+        .card-commercial,
+        .card-apartments,
+        .card-rental,
+        .card-interior {
+            background: #fff;
+            border: 1px solid #eee;
+            box-shadow: 0 25px 50px rgb(21 31 48 / 5%);
+            border-radius: 20px;
+            padding: 32px 20px;
+            position: relative;
+            z-index: 1;
+            margin: 60px 20px;
+        }
 
-            .sponsors {
-                background: #fafbfb;
-                padding: 32px 20px 100px;
-            }
-
-            #tns1>.tns-item {
-                width: calc(6.25%) !important;
-                height: auto !important;
-                padding-right: 0px !important;
-            }
-
-            .sharing-moment {
-                background: #fff;
-                padding: 32px 20px 32px;
-                text-align: center;
-            }
-
-            .we-make {
-                background: #161c25;
-                height: 1200px;
-            }
-
-            .col-md-7,
-            .col-md-6 {
-                padding-right: 15px !important;
-                padding-left: 0 !important;
-            }
-
-            .desc {
-                font-size: 20px;
-                color: #4E5253;
-                text-align: -webkit-center;
-                margin-top: 50px;
-            }
-
-            .scrollspy {
-                text-align: center;
-            }
-
-            .we-make-title {
-                font-size: 39px;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-                line-height: 46px;
-                padding: 50px 5px 20px 5px;
-            }
-
-            .all-have-row.d-flex {
-                display: block !important;
-            }
-
-            .bg.homes.roofs,
-            .bg.commercial.commercial-infra,
-            .bg.apartments,
-            .container.rental-area-spec,
-            .bg.interior {
-                display: none;
-            }
-
-            .card-home,
-            .card-commercial,
-            .card-apartments,
-            .card-rental,
-            .card-interior {
-                display: block;
-            }
-
-            .card-home,
-            .card-commercial,
-            .card-apartments,
-            .card-rental,
-            .card-interior {
-                background: #fff;
-                border: 1px solid #eee;
-                box-shadow: 0 25px 50px rgb(21 31 48 / 5%);
-                border-radius: 20px;
-                padding: 32px 20px;
-                position: relative;
-                z-index: 1;
-                margin: 60px 20px;
-            }
-
-            h3 {
-                text-align: center;
-                padding-bottom: 30px;
-            }
+        h3 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
 
 
-            img.commicial-img {
-                width: 183px;
-                height: 142px;
-                border-radius: 0.5em;
-                z-index: 99;
-                position: absolute;
-                margin-top: 45px;
-            }
+        img.commicial-img {
+            width: 183px;
+            height: 142px;
+            border-radius: 0.5em;
+            z-index: 99;
+            position: absolute;
+            margin-top: 45px;
+        }
 
-            img.commercial-images,
-            img.apartment-image,
-            img.rental-img,
-            img.interior-img {
-                width: 137px;
-                height: 224px;
-                border-radius: 0.5em;
-            }
+        img.apartment-img {
+            width: 183px;
+            height: 142px;
+            border-radius: 0.5em;
+            z-index: 99;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: -65px;
+        }
 
-            img.rental-images,
-            img.interior-images {
-                width: 137px;
-                height: 110px;
-                border-radius: 0.5em;
-            }
+        form.search {
+            display: none;
+        }
 
-            img.apartment-img {
-                width: 183px;
-                height: 142px;
-                border-radius: 0.5em;
-                z-index: 99;
-                position: absolute;
-                margin-top: 45px;
-                margin-left: -65px;
-            }
+        .commercial-row.d-flex,
+        .rental-row.d-flex {
+            display: block !important;
+        }
 
-            form.search {
-                display: none;
-            }
+        .container-fluid {
+            width: 100% !important;
+        }
 
-            .commercial-row.d-flex,
-            .rental-row.d-flex {
-                display: block !important;
-            }
-
-            .container-fluid {
-                width: 100% !important;
-            }
-
-            .navbar {
-                padding: 0px !important;
-                margin: 0px auto;
-            }
+        .navbar {
+            padding: 0px !important;
+            margin: 0px auto;
+        }
 
 
-            .navbar-nav {
-                flex-direction: row;
-                position: absolute;
-                z-index: 10;
-                margin-top: 84px;
-            }
+        .navbar-nav {
+            flex-direction: row;
+            position: absolute;
+            z-index: 10;
+            margin-top: 84px;
+        }
 
-            ul.nav.navbar-nav.navbar-right {
-                display: none;
-            }
+        ul.nav.navbar-nav.navbar-right {
+            display: none;
+        }
 
-            .banner-row,
-            .col-md-8 {
-                padding: 0 !important;
-            }
+        .banner-row,
+        .col-md-8 {
+            padding: 0 !important;
+        }
 
-            .banner-row .col-md-4 {
-                padding: 0 !important;
-                margin-top: -23px;
-            }
+        .banner-row .col-md-4 {
+            padding: 0 !important;
+            margin-top: -23px;
+        }
 
-            h1.font-bold.banner-heading {
-                line-height: 1.3em;
-                font-size: 36px;
-                width: 412px;
-                font-weight: bold;
-                color: #fff !important;
-                padding: 50px 37px;
-            }
+        h1.font-bold.banner-heading {
+            line-height: 1.3em;
+            font-size: 36px;
+            width: 412px;
+            font-weight: bold;
+            color: #fff !important;
+            padding: 50px 37px;
+        }
 
-            h1.font-bold.banner-heading p.sort-description {
-                padding-top: 15px;
-                color: #fff !important;
-            }
+        h1.font-bold.banner-heading p.sort-description {
+            padding-top: 15px;
+            color: #fff !important;
+        }
 
-            .mobile-form-input {
-                border: none;
-                padding-left: 20px;
-                font-size: 20px;
-            }
+        .mobile-form-input {
+            border: none;
+            padding-left: 20px;
+            font-size: 20px;
+        }
 
-            .card.card-col-4 {
-                margin-top: 70px;
-            }
+        .card.card-col-4 {
+            margin-top: 70px;
+        }
 
-            .card {
-                margin: 0px 20px 10px 20px;
-            }
+        .card {
+            margin: 0px 20px 10px 20px;
+        }
 
-            .icons-row.container-fluid.d-flex {
-                padding: 30px 0px;
-            }
+        .icons-row.container-fluid.d-flex {
+            padding: 30px 0px;
+        }
 
-            .city,
-            .project,
-            .beds {
-                background: rgb(255, 255, 255);
-                border: 1px solid rgb(239, 239, 239);
-                padding: 3.8em 0em 1em 1.2em;
-            }
+        .tech-park,
+        .construction-icon,
+        .rent-icon {
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(239, 239, 239);
+            padding: 5px 0px;
+            height: 200px;
+            border-radius: 0.5em;
+        }
 
-            form.mobile-form {
-                display: block;
-                z-index: 10;
-                margin: -25px 20px 0px 20px;
-                left: 0px;
-                right: 0px;
-                color: rgb(153, 153, 153);
-                position: absolute;
-                background: rgb(255, 255, 255);
-                z-index: 3;
-                border: 1px solid rgb(232, 232, 232);
-                box-shadow: rgb(0 0 0 / 10%) 0px 0.95em 3.8em;
-                border-radius: 0.9em;
-                padding: 13px;
-            }
+        .icons-row.container-fluid.d-flex {
+            padding: 30px 20px;
+        }
 
-            .fa-search {
-                font-size: 24px;
-            }
+        .icons-row .col-xl-4 {
+            padding-right: 5px !important;
+            padding-left: 0px !important;
+        }
 
-            h2.homes-title.font-bold,
-            h2.homes-title.font-bold span,
-            .sharing-moment-title,
-            .spot-light-title {
-                font-size: 30px;
-                text-align: center;
-                padding-top: 30px;
-            }
+        .text-wrap {
+            display: block;
+            padding-top: 14px;
+        }
+
+        span.count-for.fm.lg\:ml-2 {
+            display: block;
+        }
+
+        form.mobile-form {
+            display: block;
+            z-index: 10;
+            margin: -25px 20px 0px 20px;
+            left: 0px;
+            right: 0px;
+            color: rgb(153, 153, 153);
+            position: absolute;
+            background: rgb(255, 255, 255);
+            z-index: 3;
+            border: 1px solid rgb(232, 232, 232);
+            box-shadow: rgb(0 0 0 / 10%) 0px 0.95em 3.8em;
+            border-radius: 0.9em;
+            padding: 13px;
+        }
+
+        .fa-search {
+            font-size: 24px;
+        }
+
+        .rental::before {
+            background: none;
+        }
+
+        h2.homes-title.font-bold,
+        h2.homes-title.font-bold span,
+        .sharing-moment-title,
+        .spot-light-title {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        img.ap-img,
+        .commercial-img,
+        .interior-images {
+            width: 100%;
+            border-radius: 0.5em;
+        }
+
+        img.ap-img-2.ap-img,
+        .commercial-img-1 {
+            margin-left: -80px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .commercial-img-1 {
+            margin-left: 80px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+        }
+
+        img.area-images.rent-img-2,
+        .interior-img-2 {
+            margin-top: 10px;
+        }
+
+        img.area-images {
+            width: 100%;
+            border-radius: 0.5em;
+        }
 </style>
 
 <body>
@@ -1112,24 +1397,24 @@
         <div class="cities-info project-info  full-width ">
             <div class="icons-row container-fluid d-flex">
                 <div class="col-xl-4 ">
-                    <div class="city">
+                    <div class="tech-park">
                         <img style="width: 36px;height: 36px;" src="{{ url('images/tech park-01.svg') }}">
                         <span class="text-wrap"><span class="count font-medium">8+</span> <span
                                 class="count-for fm lg:ml-2">Tech Parks</span></span>
                     </div>
                 </div>
                 <div class="col-xl-4 ">
-                    <div class="project">
+                    <div class="construction-icon">
                         <img style="width: 36px;height: 36px;" src="{{ url('images/construction-01.svg') }}">
                         <span class="text-wrap"><span class="count font-medium">500+</span> <span
                                 class="count-for fm lg:ml-2">Constructions</span></span>
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="beds">
+                    <div class="rent-icon">
                         <img style="width: 36px;height: 36px;" src="{{ url('images/rental-01.svg') }}">
-                        <span class="text-wrap"><span class="count font-medium"></span> <span
-                                class="count-for fm lg:ml-2">Rental Policy</span></span>
+                        <span class="text-wrap"><span class="count font-medium">400+</span><span
+                                class="count-for fm lg:ml-2">Rental</span></span>
                     </div>
                 </div>
             </div>
@@ -1210,12 +1495,11 @@
                         </div>
                         <div class="col-md-6 commercial-images d-flex">
                             <div class="col-md-6 room-image">
-                                <img style="border-radius:.5em; z-index:99;position: absolute;margin-top:85px;"
-                                    class="commicial-img" src=" {{ URL('images/commercialspace1.png') }}"
-                                    alt="">
+                                <img class="commercial-img-1 commercial-img"
+                                    src=" {{ URL('images/commercialspace1.png') }}" alt="">
                             </div>
                             <div class="col-md-6 room-image">
-                                <img style="width:270px; height:440px;" class="wall-images"
+                                <img class="commercial-img-2 commercial-img"
                                     src=" {{ URL('images/commercialspace2.png') }}" alt="">
                             </div>
                         </div>
@@ -1229,17 +1513,13 @@
                     <div class="card-body">
                         <h3>Commercial Space</h3>
                         <div class="col-md-6 commercial-images d-flex">
-                            <div class="col-md-7 product-images d-flex">
-                                <div class="col-md-6 home-image">
-                                    <img style="border-radius:1em;" class=""
-                                        src=" {{ URL('images/kalyanihomes-content-1.svg') }}" alt="">
-                                </div>
-                                <div class="col-md-6 roof-image">
-                                    <img style="border-radius:1em;" class="wall-images"
-                                        src=" {{ URL('images/kalyanihomes-content-2.svg') }}" alt="">
-                                    <img style="border-radius:1em;" class="wall-images"
-                                        src=" {{ URL('images/kalyanihomes-content-3.svg') }}" alt="">
-                                </div>
+                            <div class="col-md-6 room-image">
+                                <img class="commercial-img-1 commercial-img"
+                                    src=" {{ URL('images/commercialspace1.png') }}" alt="">
+                            </div>
+                            <div class="col-md-6 room-image">
+                                <img class="commercial-img-2 commercial-img"
+                                    src=" {{ URL('images/commercialspace2.png') }}" alt="">
                             </div>
                         </div>
                         <p class="roof-desc desc">Kalyani provides the best commercial space for work . 8+ tech parks are
@@ -1256,21 +1536,18 @@
             <div class="bg apartments">
                 <div class="container apartments-list">
                     <div class="apartments-row d-flex">
-                        <div class="col-md-7 product-images d-flex">
-                            <div class="col-md-6 home-image">
-                                <img style="border-radius:1em;" class=""
-                                    src=" {{ URL('images/kalyanihomes-content-1.svg') }}" alt="">
+                        <div class="col-md-6 apartments-images d-flex">
+                            <div class="col-md-6 room-image">
+                                <img class="ap-img-1 ap-img" src=" {{ URL('images/Apartment-1.png') }}" alt="">
                             </div>
-                            <div class="col-md-6 roof-image">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-2.svg') }}" alt="">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-3.svg') }}" alt="">
+                            <div class="col-md-6 room-image">
+
+                                <img class="ap-img-2 ap-img" src=" {{ URL('images/Apartment-2.png') }}" alt="">
                             </div>
                         </div>
 
-                        <div class="col-md-5 m-auto">
-                            <h3 class="chore-title font-bold tittle">
+                        <div class="col-md-6 m-auto">
+                            <h3 class="apartments-title font-bold tittle">
                                 <br><span class=" text-animation" style="font-size:36px;">Apartments/Villa's</span>
                             </h3>
                             <p class="roof-desc desc">1BHK, 2BHK, 3BHK and 4BHK apartments and villa's are available at
@@ -1288,110 +1565,50 @@
                 <div class="card-apartments">
                     <div class="card-body">
                         <h3>Apartments/Villas</h3>
-                        <div class="col-md-7 product-images d-flex">
-                            <div class="col-md-6 home-image">
-                                <img style="border-radius:1em;" class=""
-                                    src=" {{ URL('images/kalyanihomes-content-1.svg') }}" alt="">
+                        <div class="apartments-row d-flex">
+                            <div class="col-md-6 apartments-images d-flex">
+                                <div class="col-md-6 room-image">
+                                    <img class="ap-img-1 ap-img" src=" {{ URL('images/Apartment-1.png') }}"
+                                        alt="">
+                                </div>
                             </div>
-                            <div class="col-md-6 roof-image">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-2.svg') }}" alt="">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-3.svg') }}" alt="">
-                            </div>
-                        </div>
-
-                        <p class="roof-desc desc">1BHK, 2BHK, 3BHK and 4BHK apartments and villa's are available at Kalyani
-                            Homes. Located
-                            near Nayandahalli metro station, Bangalore. surrounded by scholls, college's, shopping centre,
-                            banks, hospitals. Have your best experience with Kalyani Homes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!---end mobile---->
-
-
-            <div class="bg rental">
-                <div class="container rental-area-spec">
-                    <div class="rental-row d-flex">
-                        <div class="col-md-5 m-auto">
-                            <h3 class="area-title font-bold tittle">
-                                <br><span class=" text-animation" style="font-size:36px;">Rental</span>
-                            </h3>
-                            <p class="area-desc desc" style="color:#fff;">Kalyani Homes provides you the best rental
-                                options.
-                                Kalyani Homes contains almost 500+ Villa's and Apartments or rent.
-                                Special offer's for lease are provided to customers. Rent your dream home home with Kalyani
-                                Homes.</p>
-                        </div>
-                        <div class="col-md-7 area-images d-flex">
-                            <div class="col-md-6 area-image">
-                                <img style="width:270px; height:210px;border-radius:.5em;" class="wall-images"
-                                    src=" {{ URL('images/Rent-1.png') }}" alt="">
-                                <img style="width:270px; height:210px;border-radius:.5em;" class="wall-images"
-                                    src=" {{ URL('images/Rent-3.png') }}" alt="">
-                            </div>
-                            <div class="col-md-6 area-image">
-                                <img style="width:270px; height:440px;border-radius:.5em;" class=""
-                                    src=" {{ URL('images/Rent-2.png') }}" alt="">
+                            <div class="col-md-6 room-image ap-image">
+                                <img class="ap-img-2 ap-img" src=" {{ URL('images/Apartment-2.png') }}" alt="">
                             </div>
                         </div>
                     </div>
+
+                    <p class="roof-desc desc">1BHK, 2BHK, 3BHK and 4BHK apartments and villa's are available at Kalyani
+                        Homes. Located
+                        near Nayandahalli metro station, Bangalore. surrounded by scholls, college's, shopping centre,
+                        banks, hospitals. Have your best experience with Kalyani Homes.</p>
                 </div>
             </div>
+        </div>
 
-            <!---for mobile---->
-            <div class="mobile-home">
-                <div class="card-rental">
-                    <div class="card-body">
-                        <h3>Rental</h3>
-                        <div class="col-md-7 product-images d-flex">
-                            <div class="col-md-6 home-image">
-                                <img style="border-radius:1em;" class=""
-                                    src=" {{ URL('images/kalyanihomes-content-1.svg') }}" alt="">
-                            </div>
-                            <div class="col-md-6 roof-image">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-2.svg') }}" alt="">
-                                <img style="border-radius:1em;" class="wall-images"
-                                    src=" {{ URL('images/kalyanihomes-content-3.svg') }}" alt="">
-                            </div>
-                        </div>
+        <!---end mobile---->
 
-                        <p class="roof-desc desc">Kalyani Homes provides you the best rental
+
+        <div class="bg rental">
+            <div class="container rental-area-spec">
+                <div class="rental-row d-flex">
+                    <div class="col-md-5 m-auto">
+                        <h3 class="area-title font-bold tittle">
+                            <br><span class=" text-animation" style="font-size:36px;">Rental</span>
+                        </h3>
+                        <p class="area-desc desc" style="color:#fff;">Kalyani Homes provides you the best rental
                             options.
                             Kalyani Homes contains almost 500+ Villa's and Apartments or rent.
                             Special offer's for lease are provided to customers. Rent your dream home home with Kalyani
                             Homes.</p>
                     </div>
-                </div>
-            </div>
-
-            <!---end mobile---->
-
-            <div class="bg interior">
-                <div class="container hotel-foods">
-                    <div class="interior-row d-flex">
-                        <div class="col-md-7 interior-images d-flex">
-                            <div class="col-md-6 interior-image">
-                                <img style="width:270px; height:440px;" class=""
-                                    src=" {{ URL('images/Interior-1.png') }}" alt="">
-                            </div>
-                            <div class="col-md-6 interior-image">
-                                <img style="width:270px; height:210px;" class="wall-images"
-                                    src=" {{ URL('images/Interior-3.png') }}" alt="">
-                                <img style="width:270px; height:210px;" class="wall-images"
-                                    src=" {{ URL('images/Interior-2.png') }}" alt="">
-                            </div>
+                    <div class="col-md-7 area-images d-flex">
+                        <div class="col-md-6 area-image">
+                            <img class="area-images rent-img-1" src=" {{ URL('images/Rent-1.png') }}" alt="">
+                            <img class="area-images rent-img-2" src=" {{ URL('images/Rent-3.png') }}" alt="">
                         </div>
-                        <div class="col-md-5 m-auto">
-                            <h3 class="interior-title font-bold tittle"> <br><span class=" text-animation"
-                                    style="font-size:36px;">About Interior's</span>
-                            </h3>
-                            <p class="interior-desc desc">Get your dream interior's done with kalyani Homes.
-                                We provide you the best interior's .
-                                Tell your dream design to our design team, they design the best for you. </p>
+                        <div class="col-md-6 area-image">
+                            <img class="area-images rent-img-3" src=" {{ URL('images/Rent-2.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -1400,19 +1617,72 @@
 
         <!---for mobile---->
         <div class="mobile-home">
+            <div class="card-rental">
+                <div class="card-body">
+                    <h3>Rental</h3>
+                    <div class="col-md-7 product-images d-flex">
+                        <div class="col-md-6 area-image">
+                            <img class="area-images rent-img-1" src=" {{ URL('images/Rent-1.png') }}" alt="">
+                            <img class="area-images rent-img-2" src=" {{ URL('images/Rent-3.png') }}" alt="">
+                        </div>
+                        <div class="col-md-6 area-image">
+                            <img class="area-images rent-img-3" src=" {{ URL('images/Rent-2.png') }}" alt="">
+                        </div>
+                    </div>
+
+                    <p class="roof-desc desc">Kalyani Homes provides you the best rental
+                        options.
+                        Kalyani Homes contains almost 500+ Villa's and Apartments or rent.
+                        Special offer's for lease are provided to customers. Rent your dream home home with Kalyani
+                        Homes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!---end mobile---->
+
+        <div class="bg interior">
+            <div class="container hotel-foods">
+                <div class="interior-row d-flex">
+                    <div class="col-md-7 interior-images d-flex">
+                        <div class="col-md-6 interior-image">
+                            <img class="interior-images interior-img" src=" {{ URL('images/Interior-2.png') }}"
+                                alt="">
+                        </div>
+                        <div class="col-md-6 interior-image">
+                            <img class="interior-images interior-img-1" src=" {{ URL('images/Interior-3.png') }}"
+                                alt="">
+                            <img class="interior-images interior-img-2" src=" {{ URL('images/Interior-1.png') }}"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5 m-auto">
+                        <h3 class="interior-title font-bold tittle"> <br><span class=" text-animation"
+                                style="font-size:36px;">About Interior's</span>
+                        </h3>
+                        <p class="interior-desc desc">Get your dream interior's done with kalyani Homes.
+                            We provide you the best interior's .
+                            Tell your dream design to our design team, they design the best for you. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!---for mobile---->
+        <div class="mobile-home">
             <div class="card-interior">
                 <div class="card-body">
                     <h3>About Interior's</h3>
                     <div class="col-md-7 product-images d-flex">
-                        <div class="col-md-6 home-image">
-                            <img style="border-radius:1em;" class=""
-                                src=" {{ URL('images/kalyanihomes-content-1.svg') }}" alt="">
+                        <div class="col-md-6 interior-image">
+                            <img class="interior-images interior-img" src="{{ URL('images/Interior-2.png') }}"
+                                alt="">
                         </div>
-                        <div class="col-md-6 roof-image">
-                            <img style="border-radius:1em;" class="wall-images"
-                                src=" {{ URL('images/kalyanihomes-content-2.svg') }}" alt="">
-                            <img style="border-radius:1em;" class="wall-images"
-                                src=" {{ URL('images/kalyanihomes-content-3.svg') }}" alt="">
+                        <div class="col-md-6 interior-image interior-img-1">
+                            <img class="interior-images" src="{{ URL('images/Interior-3.png') }}" alt="">
+                            <img class="interior-images interior-img-2" src="{{ URL('images/Interior-1.png') }}"
+                                alt="">
                         </div>
                     </div>
 
@@ -1451,27 +1721,15 @@
                     <div class="col-md-6 ">
                         <div id="list-scrollspy" class="list-group">
                             <a class="list-group-item list-group-item-action" href="#list-item-1">
-                                {{-- <img class="d-block img-fluid scroll-image" src=" {{ URL('images\mobile-base.webp') }}"
-                                    alt="">
-                                <img class="d-block img-fluid scroll-image-food scroll-second-image"
-                                    src=" {{ URL('images\food.webp') }}" alt=""> --}}
-                                <img class="d-block img-fluid scroll-image-food scroll-second-image"
+                                <img class="d-block img-fluid scroll-image scroll-second-image"
                                     src=" {{ URL('images\Mobileappdesign-01.png') }}" alt="">
                             </a>
                             <a class="list-group-item list-group-item-action" href="#list-item-2">
-                                {{-- <img class="d-block img-fluid scroll-image active-scroll-image"
-                                    src=" {{ URL('images\mobile-base.webp') }}" alt="">
-                                <img class="d-block img-fluid scroll-image-payment scroll-second-image"
-                                    src=" {{ URL('images\down-payment.webp') }}" alt=""> --}}
-                                <img class="d-block img-fluid scroll-image-food scroll-second-image"
+                                <img class="d-block img-fluid scroll-image scroll-second-image"
                                     src=" {{ URL('images\Mobileappdesign-02.png') }}" alt="">
                             </a>
                             <a class="list-group-item list-group-item-action" href="#list-item-3">
-                                {{-- <img class="d-block img-fluid scroll-image active-scroll-image"
-                                    src=" {{ URL('images\mobile-base.webp') }}" alt="">
-                                <img class="d-block img-fluid scroll-image-service scroll-second-image"
-                                    src=" {{ URL('images\services.webp') }}" alt=""> --}}
-                                <img class="d-block img-fluid scroll-image-food scroll-second-image"
+                                <img class="d-block img-fluid scroll-image scroll-second-image"
                                     src=" {{ URL('images\Mobileappdesign-03.png') }}" alt="">
                             </a>
                         </div>
